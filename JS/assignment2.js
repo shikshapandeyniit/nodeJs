@@ -1,6 +1,6 @@
 var test = [];
 var fs = require('fs');
-var f = fs.readFile('India2011.csv', { encoding: 'utf-8' }, function(err, data) {
+var f = fs.readFile('../CSV/IndiaSC2011.csv', { encoding: 'utf-8' }, function(err, data) {
     data = data.split("\n");
     headers = data.shift().split(",");
     var json = [];
@@ -35,13 +35,13 @@ for(let j=0;j<arr.length;j++)
     }
     test.push(obj)
 }
-fs.writeFile('AgeWiseLiteratePerson.json', JSON.stringify(test, null, 2), 'utf8',
+fs.writeFile('../Json/AgeWiseLiteratePerson(SC).json', JSON.stringify(test, null, 2), 'utf8',
         function(err) { console.log(err); });
 });
 //------------------------------------second file-----------------------------------------
 var test_1 = [];
 var fs_1 = require('fs');
-var f1 = fs_1.readFile('India2011.csv', { encoding: 'utf-8' }, function(err, data) {
+var f1 = fs_1.readFile('../CSV/IndiaSC2011.csv', { encoding: 'utf-8' }, function(err, data) {
     data = data.split("\n");
     headers = data.shift().split(",");
     var json = [];
@@ -83,13 +83,13 @@ var f1 = fs_1.readFile('India2011.csv', { encoding: 'utf-8' }, function(err, dat
         }
         test_1.push(obj)
     }
-    fs_1.writeFile('StateGenderWise.json', JSON.stringify(test_1, null, 2), 'utf8',
+    fs_1.writeFile('../Json/StateGenderWise(SC).json', JSON.stringify(test_1, null, 2), 'utf8',
         function(err) { console.log(err); });
 });
 //------------------------------------------third file--------------------------------------------
 var test_2 = [];
 var fs_2 = require('fs');
-var f2 = fs_2.readFile('India2011.csv', { encoding: 'utf-8' }, function(err, data) {
+var f2 = fs_2.readFile('../CSV/IndiaSC2011.csv', { encoding: 'utf-8' }, function(err, data) {
     data = data.split("\n");
     headers = data.shift().split(",");
     var json = [];
@@ -104,11 +104,11 @@ var f2 = fs_2.readFile('India2011.csv', { encoding: 'utf-8' }, function(err, dat
             tmp.Primary = row[22];
             tmp.middle = row[25];
             tmp.metricSec = row[28];
-            tmp.higherSec = row[21];
+            tmp.higherSec = row[31];
             tmp.nonTechDiploma = row[34];
             tmp.techDiploma = row[37];
-            tmp.graduate = row[41];
-            tmp.unclassified = row[44];
+            tmp.graduate = row[40];
+            tmp.unclassified = row[43];
             tmp.state = row[3];
         }
         json.push(tmp);
@@ -138,7 +138,7 @@ var f2 = fs_2.readFile('India2011.csv', { encoding: 'utf-8' }, function(err, dat
             }
         test_2.push(obj)
     }
-    fs_2.writeFile('EduCategoryWise.json', JSON.stringify(test_2, null, 2), 'utf8',
+    fs_2.writeFile('../Json/EduCategoryWise(SC).json', JSON.stringify(test_2, null, 2), 'utf8',
         function(err) { console.log(err); });
 });
 

@@ -1,0 +1,42 @@
+[
+  {
+    "Education": "Educational level - Literate without educational level - Persons",
+    "Data": 2809137
+  },
+  {
+    "Education": "Educational level - Below Primary - Persons",
+    "Data": 14093454
+  },
+  {
+    "Education": "Educational level - Primary - Persons",
+    "Data": 17761260
+  },
+  {
+    "Education": "Educational level - Middle - Persons",
+    "Data": 13291427
+  },
+  {
+    "Education": "Educational level - Matric/Secondary - Persons",
+    "Data": 8283421
+  },
+  {
+    "Education": "Educational level - Higher secondary/Intermediate/Pre-University/Senior secondary - Persons",
+    "Data": 5593844
+  },
+  {
+    "Education": "Educational level - Non-technical diploma or certificate not equal to degree - Persons",
+    "Data": 51704
+  },
+  {
+    "Education": "Educational level - Technical diploma or certificate not equal to degree - Persons",
+    "Data": 583859
+  },
+  {
+    "Education": "Educational level - Graduate & above - Persons",
+    "Data": 3751759
+  },
+  {
+    "Education": "Educational level - Unclassified - Persons",
+    "Data": 257099
+  }
+]
