@@ -1,5 +1,6 @@
 var test = [];
 var fs = require('fs');
+/*read data from external csv file*/
 var f = fs.readFile('../CSV/India2011.csv', { encoding: 'utf-8' }, function(err, data) {
     data = data.split("\n");
     headers = data.shift().split(",");
